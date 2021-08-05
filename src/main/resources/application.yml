@@ -1,0 +1,5 @@
+server:
+  port: 8090
+
+service:
+  soomgo-api.host: "http://localhost:8080"

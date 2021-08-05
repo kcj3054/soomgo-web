@@ -19,6 +19,9 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/user")
 public class UserController {
 
+  // properties 파일(application.yml)에 세팅한 내용을 Spring 변수에 주입하는 역할을 한다.
+  // 속성 값은 런타임에 변수로 주입되며 속성값이 없으면 오류
+  //${~}값을 읽어와 읽어와서 apiHost로 쓸게
   @Value("${service.soomgo-api.host}")
   private String apiHost;
 
